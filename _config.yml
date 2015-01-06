@@ -14,3 +14,5 @@ disqus_shortname: danzilio
 
 # Build settings
 markdown: redcarpet
+gems:
+  - jekyll-redirect-from
