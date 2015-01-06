@@ -1,0 +1,15 @@
+# Site settings
+title: Dispatches from the Bubble
+description: >
+  I’m currently a Puppet Evangelist and Systems Engineer at Constant Contact.
+  This blog is my way of contributing back to the community. It's also a sort
+  of exposure therapy for my impostor syndrome. Maybe you’ll learn something.
+  Better yet, maybe you’ll teach me something.
+tagline: Random musings of an Op
+baseurl: ""
+url: "http://blog.danzilio.net" # the base hostname & protocol for your site
+twitter_username: djdanzilio
+github_username:  danzilio
+
+# Build settings
+markdown: redcarpet
