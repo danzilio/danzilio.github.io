@@ -7,6 +7,7 @@ tags:
   - Puppet
   - Puppet 4
   - rspec-puppet
+comments: true
 ---
 
 If you’re like me, you’re interested in making the transition to Puppet 4 as quickly and seamlessly as possible (er...at least a little easier and faster than from 2.7 to 3). Now that the Puppet 4 language is [nearly complete](https://docs.puppetlabs.com/puppet/3.7/reference/release_notes.html#feature-nearly-final-implementation-of-the-puppet-4-language), we can use the future parser in Puppet 3.7 to test our code to make sure it’s ready for the switch. Thanks to some recent changes in rspec-puppet, we can more easily integrate testing with the future parser into our CI workflow. I recently added this functionality to my [virtualbox](https://forge.puppetlabs.com/danzilio/virtualbox) module on the Forge. Head on over to [GitHub](https://github.com/danzilio/danzilio-virtualbox) if you’re interested in the full example.

@@ -6,6 +6,7 @@ tags:
   - PuppetConf 2013
   - PuppetConf
   - Puppet
+comments: true
 ---
 
 Will Farrington’s presentation [“Puppet at GitHub”](http://sched.co/16C6ffa) was fantastic. It was really interesting to see how a DevOps giant does things. Needless to say, we’re totally intrigued by the idea of [ChatOps](https://speakerdeck.com/jnewland/chatops-at-github). We’re going to start playing with [Hubot](http://hubot.github.com/). Will talked about how they avoid having “hand crafted, artisanal, free range servers” by automating everything from the start. One command to Hubot boots the server using IPMI into memtest for an hour, then into a stress testing regimen for a day, and then into provisioning. We **really** like the sound of this. Will is a fantastic presenter with great stage presence. It’s incredibly clear that the work GitHub is doing is paving the way for innovation in DevOps.

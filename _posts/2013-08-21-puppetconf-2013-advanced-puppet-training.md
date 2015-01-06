@@ -6,6 +6,7 @@ tags:
   - PuppetConf 2013
   - PuppetConf
   - Puppet
+comments: true
 ---
 
 So, it’s Wednesday morning and I’ve been in San Francisco since Sunday for PuppetConf. The conference doesn’t start until tomorrow (Thursday) but I opted to attend Advanced Puppet training which came with free admission to the conference. I’ve been using Puppet since 2009 and I’ve never attended any kind of training for it. I’ve read all the books, most of the documentation, and tons of blogs and other resources. I didn’t have particularly high expectations for the training; I guess I was looking to use it to fill in some gaps. I’m sorry to say that the class hasn’t been able to live up to my already low expectations.

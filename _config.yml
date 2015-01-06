@@ -10,6 +10,7 @@ baseurl: ""
 url: "http://blog.danzilio.net" # the base hostname & protocol for your site
 twitter_username: djdanzilio
 github_username:  danzilio
+disqus_shortname: danzilio
 
 # Build settings
 markdown: redcarpet
