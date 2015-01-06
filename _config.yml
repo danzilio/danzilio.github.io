@@ -7,13 +7,12 @@ description: >
   Better yet, maybe you’ll teach me something.
 tagline: Random musings of an Op
 baseurl: ""
-url: "http://blog.danzilio.net" # the base hostname & protocol for your site
+url: "http://blog.danzilio.net"
 twitter_username: djdanzilio
 github_username:  danzilio
 disqus_shortname: danzilio
 linkedin_shortname: djdanzilio
-
-# Build settings
 markdown: redcarpet
 gems:
   - jekyll-redirect-from
+paginate: 5
