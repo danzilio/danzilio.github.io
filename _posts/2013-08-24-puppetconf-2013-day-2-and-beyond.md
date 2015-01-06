@@ -7,6 +7,7 @@ tags:
   - PuppetConf
   - Puppet
 comments: true
+redirect_from: /2013/08/24/puppetconf-2013-day-2-and-beyond/
 ---
 
 Well, PuppetConf is over. I'm writing this on the plane (with no WiFi...ahem) back to Albuquerque. It turns out that I failed to recognize the nuance between a "direct" and "nonstop" flight, so I'm taking the time to write this blog on the tarmac at LAX. Today began most disturbingly at about 6:40am with my coworker calling my room, rousing me from my deep and wondrous slumber to ask if I intended on making the flight back home. Apparently, another nuance that recently escaped me is the "weekday only" setting on my alarm. But, here I am.
