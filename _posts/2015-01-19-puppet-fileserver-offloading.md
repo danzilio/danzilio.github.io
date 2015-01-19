@@ -27,7 +27,7 @@ As you can see, our API response times dropped from upwards of 1 second to under
 Here's what the architecture looks like:
 
 <div align='center'>
-{% mermaid %}
+  <script src={{ site.mermaid-src }}></script><div class='mermaid' align='center'>
 graph TB;
 	cl{Clients}-- https -->lb1(Front End Balancer);
 	lb1-- https -->m1[Puppet 2.7 Master<br /><code>master1.example.com</code>];
@@ -36,7 +36,7 @@ graph TB;
 	m2-- http -->lb2;
 	lb2-- http -->fs1[Puppet 3.7 Master<br /><code>master3.example.com</code>];
 	lb2-- http -->fs2[Puppet 3.7 Master<br /><code>master4.example.com</code>];
-{% endmermaid %}
+  </div>
 </div>
 
 The Puppet 2.7 clients connect to the Puppet masters via the `Front End Balancer` on the standard port. The load balancer sends the connection to one of the two Puppet 2.7 masters. From there, we use Apache to proxy all traffic headed for the `file_content`, `file_metadata`, or `file_metadatas` endpoints to the `Back End Balancer` on port 18141 which balances this traffic among the back end file servers.

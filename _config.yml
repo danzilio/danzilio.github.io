@@ -16,5 +16,4 @@ markdown: redcarpet
 gems:
   - jekyll-redirect-from
 paginate: 5
-mermaid:
-  src: 'https://cdn.rawgit.com/knsv/mermaid/0.3.2/dist/mermaid.full.min.js'
+mermaid-src: 'https://cdn.rawgit.com/knsv/mermaid/0.3.2/dist/mermaid.full.min.js'
