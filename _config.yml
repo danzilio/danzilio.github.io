@@ -15,7 +15,6 @@ linkedin_shortname: djdanzilio
 markdown: redcarpet
 gems:
   - jekyll-redirect-from
-  - jekyll-mermaid
 paginate: 5
 mermaid:
   src: 'https://cdn.rawgit.com/knsv/mermaid/0.3.2/dist/mermaid.full.min.js'
