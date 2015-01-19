@@ -2,11 +2,12 @@
 layout: post
 title: "The Seven Habits of Highly Effective Puppet Users: Think like a software developer"
 date: 2015-01-06
-category: Seven Habits
+category: seven_habits
 tags:
   - Puppet
   - Seven Habits
 comments: true
+redirect_from: /seven%20habits/2015/01/06/seven-habits-think-like-a-software-developer.html
 ---
 
 *This post originally appeared on the [Constant Contact Tech Blog](http://techblog.constantcontact.com/devops/7-habits-of-highly-effective-puppet-users-habit-1/). I'm reposting it here for continuity.*
