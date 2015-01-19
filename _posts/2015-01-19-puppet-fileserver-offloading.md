@@ -18,14 +18,15 @@ Constant Contact was a very early adoper of Puppet, and it really shows in the c
 
 We needed a way to reduce Puppet run times with Puppet 2.7. Since we're a fairly data-driven bunch, our first step was to gather some performance data. A quick look at our Puppet report data told us that the File resource was responsible for over 30% of our Puppet run time. Looking for more granular information, we configured Logstash to watch our Apache logs and send the API endpoint response times to Graphite. A trend quickly emerged; the median response time for the `file_metadata` endpoint was over 1 second (!!). In our environment, the `file_metadata` endpoint is the most frequently hit endpoint. An average Puppet run hits this endpoint well over a hundred times. Enter Puppet 3.
 
-We've been preparing for Puppet 3 for the past year or so. Around this time we began standing up pairs of Puppet 3 masters in each environment, similar to our Puppet 2.7 setup. Initial tests confirmed the fact that Puppet 3 is indeed **much** faster than Puppet 2.7 (this shouldn't be a surprise to anybody). Mostly as a thought experiment, I decided to experiment with proxying the `file_metadata` and `file_content` endpoints to our Puppet 3 masters in our development environment. The results were pretty interesting. Here's a snapshot from our Grafana dashboard showing the median response times for the `file_metadata` API endpoints.
+We've been preparing for Puppet 3 for the past year or so. Around this time we began standing up pairs of Puppet 3 masters in each environment, similar to our Puppet 2.7 setup. Initial tests confirmed the fact that Puppet 3 is indeed **much** faster than Puppet 2.7 (this shouldn't be a surprise to anybody). Mostly as a thought experiment, I decided to try proxying the `file_metadata` and `file_content` endpoints to our Puppet 3 masters in our development environment. The results were pretty interesting. Here's a snapshot from our Grafana dashboard showing the median response times for the `file_metadata` API endpoints:
 
-![](/assets/offloading_results.png)
-
+<div align='center'>
+  <img src="/assets/offloading_results.png" alt="">
+</div>
+<br />
 As you can see, our API response times dropped from upwards of 1 second to under 200ms for the `file_metadata` endpoints. After exhaustive testing, we found that this reduced our Puppet run times by about a third (!!). Our CD team was very excited to see their Jenkins jobs speeding up. We've implemented this offloading configuration across all environments.
 
 Here's what the architecture looks like:
-
 <div align='center'>
   <script src={{ site.mermaid-src }}></script><div class='mermaid' align='center'>
 graph TB;
