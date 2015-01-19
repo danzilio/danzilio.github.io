@@ -9,6 +9,8 @@ tags:
 comments: true
 ---
 
+*This post originally appeared on the [Constant Contact Tech Blog](http://techblog.constantcontact.com/devops/7-habits-of-highly-effective-puppet-users-habit-1/). I'm reposting it here for continuity.*
+
 I gave a talk at PuppetConf 2014 entitled [“The Seven Habits of Highly Effective Puppet Users”](https://puppetlabs.com/presentations/seven-habits-highly-effective-puppet-users-david-danzilio-constant-contact) based on a collection of observations that I’ve made over the years regarding high-functioning Puppet users. These users exhibit common behaviors that go far beyond policies and procedures. These behaviors are broadly understood by team members and nearly universally adhered to. It’s clear that these habits lead to more stable, maintainable, and well-understood Puppet deployments. This is the first in a series of blog posts discussing those seven habits.
 
 **Habit 1: Think like a software developer**
