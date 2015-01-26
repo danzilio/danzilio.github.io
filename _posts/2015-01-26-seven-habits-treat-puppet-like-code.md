@@ -11,7 +11,7 @@ comments: true
 
 *This post originally appeared on the [Constant Contact Tech Blog](http://techblog.constantcontact.com/software-development/treat-puppet-like-code/). I'm reposting it here for continuity.*
 
-*Note: This is the second post in a [series](http://blog.danzilio.net/tags.html#Seven+Habits) based on a talk I gave at PuppetConf 2014: [The Seven Habits of Highly Effective Puppet Users](https://puppetlabs.com/presentations/seven-habits-highly-effective-puppet-users-david-danzilio-constant-contact).*
+***Note**: This is the second post in a [series](http://blog.danzilio.net/tags.html#Seven+Habits) based on a talk I gave at PuppetConf 2014: [The Seven Habits of Highly Effective Puppet Users](https://puppetlabs.com/presentations/seven-habits-highly-effective-puppet-users-david-danzilio-constant-contact).*
 
 Of all the trends in operations, infrastructure as code is a major game changer. Infrastructure as code has brought a lot of new people—many of whom don’t necessarily consider themselves developers—into the software development world. This is, understandably, a strange world for many Ops folks. Traditionally, operations folks have had very different toolchains than their developer compatriots. This has made sense because they were solving different technical problems; the toolchains evolved in separate worlds. Why would an Ops person need to know how to use Git when they’re not writing any code?
 
@@ -23,6 +23,7 @@ Infrastructure as code is just one of the driving forces to unify toolchains bet
 - code review
 - style
 
+<br />
 Let’s take a quick look at each of these fundamental elements of building and maintaining code:
 
 **Version Control**
@@ -42,6 +43,7 @@ Documentation best practices include:
 3. No new functionality should be added without documentation.
 4. Documentation must not be an afterthought; it should be central to your development workflow.
 5. You should document your code as you go, because you’re probably not going to do it after the fact.
+<br />
 
 **Refactoring**
 
