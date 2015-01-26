@@ -30,4 +30,5 @@ So, what does this really mean? It means that you’re going to have to do some 
 - documentation
 - test driven development
 
+<br />
 These things are fairly foreign to system administrators, but they’re about to become central to your new job description. Luckily, I’m here to help. Over the course of this blog series, I’m going to touch on many of these topics. Stay tuned!
