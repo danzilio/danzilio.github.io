@@ -61,3 +61,42 @@ Truthiness
 Finished in 0.00107 seconds (files took 0.08412 seconds to load)
 1 example, 0 failures
 ```
+
+## Expectations
+
+An example is just a list of expected behaviors. Our example has one **expectation**, that the subject should equal `true`. This could also be expressed using the `expect` method:
+
+```ruby
+describe 'Truthiness' do
+  let(:subject) { true }
+
+  it { expect(subject).to be true }
+end
+```
+
+This doesn't read as smoothly as it did with the `is_expected` method, which is just `expect` with an implicit `subject`. We can make this example more readable by passing a descriptive title to the `it` method:
+
+```ruby
+describe 'Truthiness' do
+  let(:subject) { true }
+
+  it 'should behave truthy' do
+    expect(subject).to be true
+  end
+end
+```
+
+Now this example is easier to read. We can see that our subject `should behave truthy` and we have a list of expectations that need to be met for our example to pass. Let's add an expectation that our subject is not `false`:
+
+```ruby
+describe 'Truthiness' do
+  let(:subject) { true }
+
+  it 'should behave truthy' do
+    expect(subject).to be true
+    expect(subject).not_to be false
+  end
+end
+```
+
+As you can see, examples can have any number of expectations. You should use as many expectations as necessary to validate the behavior you're testing in an example.
