@@ -154,4 +154,59 @@ Failed examples:
 rspec ./spec/hello_world_spec.rb:2 # Hello world! should say hello
 ```
 
-As you can see, the `be` matcher actually tests the identity of the object, but this example uses two different instances of `String`.
+As you can see, the `be` matcher actually compares the identity of each object instance, but this example uses two different instances of `String`. We're really only interested in comparing the values of the `String` instances so we use the `eq` matcher.
+
+## Contexts
+
+RSpec offers two primary methods of grouping tests together. We've already looked at one way, by creating **example groups** with the `describe` method. The other way is to use the `context` method. The `context` method is really just an alias for the `describe` method. The `describe` method is generally used to create example groups that describe an object, while the `context` method is used to create example groups that describe the state of an object that can vary. Here's an example describing an `Array` object with multiple contexts:
+
+```ruby
+describe Array do
+  context 'with no elements' do
+    let(:subject) { [] }
+    it 'should be empty' do
+      expect(subject.count).to eq 0
+    end
+  end
+
+  context 'with elements' do
+    let(:subject) { ['foo', 'bar', 'baz'] }
+    it 'should not be empty' do
+      expect(subject.count).not_to eq 0
+    end
+  end
+end
+```
+
+Here we've grouped our examples by the class of object we're testing (`Array`), but we've segmented our examples based on the context we're looking to describe. Each `context` introduces a new scope. Examples grouped by `context` can have their own subjects, or they can inherit their subject from their parent. Here's an example where we inherit our subject from our parent and test for different contexts:
+
+```ruby
+describe Hash do
+  let(:subject) {{ :foo => 'bar', :baz => baz_val }}
+  let(:baz_val) { nil }
+
+  it 'should have the foo key set to bar' do
+    expect(subject[:foo]).to eq 'bar'
+  end
+
+  it 'should have the baz key set to nil' do
+    expect(subject[:baz]).to be nil
+  end
+
+  context 'with baz_val set to qux' do
+    let(:baz_val) { 'qux' }
+    it 'should have the baz key set to qux' do
+      expect(subject[:baz]).to eq 'qux'
+    end
+  end
+
+  context 'with baz_val set to quux' do
+    let(:baz_val) { 'quux' }
+    it 'should have the baz key set to quux' do
+      expect(subject[:baz]).to eq 'quux'
+    end
+  end
+end
+```
+
+Here we're testing the same subject, but we're testing that object under different contexts. We're overriding the `baz_val` method inside our different `context` blocks and ensuring that our object behaves the way we expect it to under different conditions. This allows us to test parts of our code that vary with context while avoiding duplicating our tests that focus on the parts of our code that remain stable.
