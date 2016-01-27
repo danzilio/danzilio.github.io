@@ -16,17 +16,17 @@ I've noticed a lot of interest in RSpec from ops folks lately, likely driven by 
 
 # RSpec Basics
 
-RSpec is a behavior driven development (BDD) framework for Ruby. BDD focuses on the behavior and expected outcomes of your code. Popular BDD frameworks use simple domain-specific languages that employ natural-lanaguage constructs. As a result, BDD code is often very easy to read with inputs and expectations being very easy to identify. RSpec offers several primitives to model the beavior of your application including **groups**, **examples**, **contexts**, and **matchers**.
+RSpec is a behavior driven development (BDD) framework for Ruby. BDD focuses on the behavior and expected outcomes of your code. Popular BDD frameworks use simple domain-specific languages that employ natural-lanaguage constructs. As a result, BDD code is often very easy to read with inputs and expectations being very easy to identify. RSpec offers several primitives to model the beavior of your application including **groups**, **examples**, **contexts**, **expectations**, and **matchers**.
 
 ## Examples and Groups
 
-The most fundamental primitive in `rspec` is the **example**. An example is the description of a behavior you expect your code to exhibit. Examples are declared using the `it` method and are often grouped together logically inside a (very creatively named) **example group**. Example groups are declared with the `describe` method. Example groups make up your application's specification; they often end up looking a lot like lists of acceptance criteria. Here's a simple example:
+The most fundamental primitive in `rspec` is the **example**. An example is the description of a behavior you expect your code to exhibit. Examples are declared using the `it` method and are often grouped together logically inside a (very creatively named) **example group**. Examples are comprised of a **subject** and an **expectation**. Example groups are declared with the `describe` method. Example groups make up your application's specification; they often end up looking a lot like lists of acceptance criteria. Here's a simple example:
 
 ```ruby
 it { is_expected.to be true }
 ```
 
-This code can be read as "it is expected to be true" and literally means that the subject of the test (we'll go into more detail in a minute) should return `true`. I didn't set a `subject` in the example above, but you can do that with the `let` method:
+This code can be read as "it is expected to be true" and literally means that the **subject** of the test (we'll go into more detail in a minute) should return `true`. I didn't set a `subject` in the example above, but you can do that with the `let` method:
 
 ```ruby
 let(:subject) { true }
@@ -52,7 +52,7 @@ describe 'Truthiness' do
 end
 ```
 
-Here we have an example group named `Truthiness`, we've set the `subject` to `true`, and we've created an example that expects our subject to be `true`. Let's run this code and see what the output is:
+Here we have an example group named `Truthiness`, we've set the `subject` to `true`, and we've created an example with the expectation that our subject is `true`. Let's run this code and see what the output is:
 
 ```
 Truthiness
@@ -62,9 +62,9 @@ Finished in 0.00107 seconds (files took 0.08412 seconds to load)
 1 example, 0 failures
 ```
 
-## Expectations
+## Expectations and Matchers
 
-An example is just a list of expected behaviors. Our example has one **expectation**, that the subject should equal `true`. Our example above could also be expressed using the `expect` method:
+An example is just a list of behaviors expected of our subject. Our example has one **expectation**: that the subject should be `true`. Our example above could also be expressed using the `expect` method:
 
 ```ruby
 describe 'Truthiness' do
@@ -99,4 +99,4 @@ describe 'Truthiness' do
 end
 ```
 
-As you can see, examples can have any number of expectations. You should use as many expectations as necessary to validate the behavior you're testing in an example.
+As you can see, examples can contain any number of expectations. You should use as many expectations as necessary to validate the behavior you're testing in an example. One element of an expectation that we haven't yet discussed is the **matcher**, which is really the heart of an expectation. Our example above only uses the `be` matcher but there are many others. Matchers describe the behavior you expect your subject to exhibit. In our example, we are using the `be` matcher to compare our subject's identity with our matcher.
