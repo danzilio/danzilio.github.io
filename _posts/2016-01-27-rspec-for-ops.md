@@ -16,11 +16,11 @@ I've noticed a lot of interest in RSpec from ops folks lately, likely driven by 
 
 # RSpec Basics
 
-RSpec is a behavior driven development (BDD) framework for Ruby. BDD focuses on the behavior and expected outcomes of your code. Popular BDD frameworks use simple domain-specific languages that employ natural-lanaguage constructs. As a result, BDD code is often very easy to read with inputs and expectations being very easy to identify. RSpec offers several primitives to model the beavior of your application including *groups*, *examples*, *contexts*, and *matchers*.
+RSpec is a behavior driven development (BDD) framework for Ruby. BDD focuses on the behavior and expected outcomes of your code. Popular BDD frameworks use simple domain-specific languages that employ natural-lanaguage constructs. As a result, BDD code is often very easy to read with inputs and expectations being very easy to identify. RSpec offers several primitives to model the beavior of your application including **groups**, **examples**, **contexts**, and **matchers**.
 
 ## Examples and Groups
 
-The most fundamental primitive in `rspec` is the *example*. An example is the description of a behavior you expect your code to exhibit. Examples are declared using the `it` method and are often grouped together logically inside a (very creatively named) *example group*. Example groups are declared with the `describe` method. Example groups make up your application's specification; they often end up looking a lot like lists of acceptance criteria. Here's a simple example:
+The most fundamental primitive in `rspec` is the **example**. An example is the description of a behavior you expect your code to exhibit. Examples are declared using the `it` method and are often grouped together logically inside a (very creatively named) **example group**. Example groups are declared with the `describe` method. Example groups make up your application's specification; they often end up looking a lot like lists of acceptance criteria. Here's a simple example:
 
 ```ruby
 it { is_expected.to be true }
@@ -42,7 +42,7 @@ def subject
 end
 ```
 
-The `let` method creates a new method based on the name you passed it as an argument. The code passed to the `let` method's block is then lazily evaluated and cached in the instance variable `@subject`. *Lazy evaluation* means that the code associated with this method is not evaluated until it is called the first time. This is in contrast to *eager evaluation* where the code is evaluated as soon as it is bound to a variable. This allows you to set some state that persists inside an example group, this also means that you can only use the `let` method inside an example group. Let's fix our example code:
+The `let` method creates a new method based on the name you passed it as an argument. The code passed to the `let` method's block is then lazily evaluated and cached in the instance variable `@subject`. **Lazy evaluation** means that the code associated with this method is not evaluated until it is called the first time. This is in contrast to **eager evaluation** where the code is evaluated as soon as it is bound to a variable. This allows you to set some state that persists inside an example group, this also means that you can only use the `let` method inside an example group. Let's fix our example code:
 
 ```ruby
 describe 'Truthiness' do
