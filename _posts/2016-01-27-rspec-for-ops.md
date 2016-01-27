@@ -12,7 +12,7 @@ published: false
 
 # RSpec for Ops
 
-I've noticed a lot of interest in RSpec from ops folks lately, likely driven by infracode testing tools like Kitchen, Beaker, and ServerSpec. I've also noticed a lot of ops folks using `rspec` without really understanding some of the fundamentals. This results in some suboptimal `rspec` code. This blog post is an attempt to outline some of the basics of test driven development with `rspec` from the perspective of an Op :)
+I've noticed a lot of interest in RSpec from ops folks lately, likely driven by infracode testing tools like [Kitchen](http://kitchen-ci.org), [Beaker](https://github.com/puppetlabs/beaker), and [Serverspec](http://serverspec.org). I've also noticed a lot of ops folks using `rspec` without really understanding some of the fundamentals. This results in some suboptimal `rspec` code. This blog post is an attempt to outline some of the basics of test driven development with `rspec` from the perspective of an Op :) I'll start by outlining `rspec` basics followed by some (hopefully) relatable examples.
 
 # RSpec Basics
 
@@ -64,7 +64,7 @@ Finished in 0.00107 seconds (files took 0.08412 seconds to load)
 
 ## Expectations
 
-An example is just a list of expected behaviors. Our example has one **expectation**, that the subject should equal `true`. This could also be expressed using the `expect` method:
+An example is just a list of expected behaviors. Our example has one **expectation**, that the subject should equal `true`. Our example above could also be expressed using the `expect` method:
 
 ```ruby
 describe 'Truthiness' do
