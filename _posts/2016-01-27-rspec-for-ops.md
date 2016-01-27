@@ -209,4 +209,17 @@ describe Hash do
 end
 ```
 
-Here we're testing the same subject, but we're testing that object under different contexts. We're overriding the `baz_val` method inside our different `context` blocks and ensuring that our object behaves the way we expect it to under different conditions. This allows us to test parts of our code that vary with context while avoiding duplicating our tests that focus on the parts of our code that remain stable.
+Here we're testing the same `Hash` object, but we're testing that object under different contexts. We're overriding the `baz_val` method inside our `context` blocks and ensuring that our object behaves the way we expect it to under different conditions. This allows us to test parts of our code that vary with context while avoiding duplicating our tests that focus on the parts of our code that remain stable. Segmenting our examples into `context` blocks makes our test code and output more readable. Here's the output of the above example:
+
+```
+Hash
+  should have the foo key set to bar
+  should have the baz key set to nil
+  with baz_val set to qux
+    should have the baz key set to qux
+  with baz_val set to quux
+    should have the baz key set to quux
+
+Finished in 0.00189 seconds (files took 0.10379 seconds to load)
+4 examples, 0 failures
+```
