@@ -9,7 +9,6 @@ tags:
 comments: true
 ---
 
-
 # RSpec For Ops
 
 I've noticed a lot of interest in RSpec from ops folks lately, likely driven by infracode testing tools like [Kitchen](http://kitchen-ci.org), [Beaker](https://github.com/puppetlabs/beaker), and [Serverspec](http://serverspec.org). I've also noticed a lot of ops folks using `rspec` without really understanding some of the fundamentals. This results in some suboptimal `rspec` code, and generally lots of headaches for newcomers to `rspec`. This blog post is the first in a series attempting to outline some of the basics of test driven development with `rspec` from the perspective of an Op :) I'll start by outlining `rspec` fundamentals, another post will follow with some (hopefully) relatable examples.
