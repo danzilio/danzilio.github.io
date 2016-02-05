@@ -1,20 +1,20 @@
 ---
 layout: post
-title: "RSpec For Ops: Essentials"
-date: 2016-01-27
+title: "RSpec For Ops Part 1: Essentials"
+date: 2016-02-05
 tags:
   - RSpec
   - TDD
   - Testing
 comments: true
-published: false
 ---
 
-# RSpec for Ops: Essentials
 
-I've noticed a lot of interest in RSpec from ops folks lately, likely driven by infracode testing tools like [Kitchen](http://kitchen-ci.org), [Beaker](https://github.com/puppetlabs/beaker), and [Serverspec](http://serverspec.org). I've also noticed a lot of ops folks using `rspec` without really understanding some of the fundamentals. This results in some suboptimal `rspec` code, and generally lots of headaches for newcomers to `rspec`. This blog post is an attempt to outline some of the basics of test driven development with `rspec` from the perspective of an Op :) I'll start by outlining `rspec` basics, another post will follow with some (hopefully) relatable examples.
+# RSpec For Ops
 
-# RSpec Basics
+I've noticed a lot of interest in RSpec from ops folks lately, likely driven by infracode testing tools like [Kitchen](http://kitchen-ci.org), [Beaker](https://github.com/puppetlabs/beaker), and [Serverspec](http://serverspec.org). I've also noticed a lot of ops folks using `rspec` without really understanding some of the fundamentals. This results in some suboptimal `rspec` code, and generally lots of headaches for newcomers to `rspec`. This blog post is the first in a series attempting to outline some of the basics of test driven development with `rspec` from the perspective of an Op :) I'll start by outlining `rspec` fundamentals, another post will follow with some (hopefully) relatable examples.
+
+# RSpec Essentials
 
 RSpec is a [behavior driven development](https://en.wikipedia.org/wiki/Behavior-driven_development) (BDD) framework for Ruby. BDD focuses on the behavior and expected outcomes of your code. RSpec provides a simple [domain-specific language](https://en.wikipedia.org/wiki/Domain-specific_language) that employs natural-lanaguage constructs for describing tests. As a result, BDD code is often very easy to read with inputs and expectations being very easy to identify. RSpec offers several primitives to model the behavior of your code including **groups**, **examples**, **contexts**, **expectations**, and **matchers**.
 
