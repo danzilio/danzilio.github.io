@@ -48,7 +48,7 @@ Let's take a look at some of the configurations we used to make this happen:
 
 Here's the Apache configuration file for the Puppet 2.7 Masters (of particular note are lines 35-42):
 
-```apache
+```
 Listen 8140
 <VirtualHost *:8140>
   SSLEngine on
@@ -126,7 +126,7 @@ apache::vhost { "${::fqdn}-fileserver":
 
 Which results in this Apache configuration file:
 
-```apache
+```
 # ************************************
 # Vhost template in module puppetlabs-apache
 # Managed by Puppet
