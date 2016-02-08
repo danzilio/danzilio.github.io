@@ -12,8 +12,12 @@ twitter_username: djdanzilio
 github_username:  danzilio
 disqus_shortname: danzilio
 linkedin_shortname: djdanzilio
-markdown: redcarpet
+markdown: kramdown
 gems:
   - jekyll-redirect-from
+  - jekyll-paginate
 paginate: 5
+kramdown:
+  input: GFM
+timezone: Etc/UTC
 mermaid-src: 'https://cdn.rawgit.com/knsv/mermaid/0.3.2/dist/mermaid.full.min.js'

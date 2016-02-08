@@ -27,8 +27,8 @@ We've been preparing for Puppet 3 for the past year or so. Around this time we b
 As you can see, our API response times dropped from upwards of 1 second to under 200ms for the `file_metadata` endpoints. After exhaustive testing, we found that this reduced our Puppet run times by about a third (!!). Our CD team was very excited to see their Jenkins jobs speeding up. We've implemented this offloading configuration across all environments.
 
 Here's what the architecture looks like:
-<div align='center'>
-  <script src={{ site.mermaid-src }}></script><div class='mermaid' align='center'>
+
+<div class='mermaid' align='center'>
 graph TB;
 	cl{Clients}-- https -->lb1(Front End Balancer);
 	lb1-- https -->m1[Puppet 2.7 Master<br /><code>master1.example.com</code>];
@@ -37,7 +37,6 @@ graph TB;
 	m2-- http -->lb2;
 	lb2-- http -->fs1[Puppet 3.7 Master<br /><code>master3.example.com</code>];
 	lb2-- http -->fs2[Puppet 3.7 Master<br /><code>master4.example.com</code>];
-  </div>
 </div>
 
 The Puppet 2.7 clients connect to the Puppet masters via the `Front End Balancer` on the standard port. The load balancer sends the connection to one of the two Puppet 2.7 masters. From there, we use Apache to proxy all traffic headed for the `file_content`, `file_metadata`, or `file_metadatas` endpoints to the `Back End Balancer` on port 18141 which balances this traffic among the back end file servers.
@@ -48,7 +47,7 @@ Let's take a look at some of the configurations we used to make this happen:
 
 Here's the Apache configuration file for the Puppet 2.7 Masters (of particular note are lines 35-42):
 
-```
+```apache
 Listen 8140
 <VirtualHost *:8140>
   SSLEngine on
@@ -126,7 +125,7 @@ apache::vhost { "${::fqdn}-fileserver":
 
 Which results in this Apache configuration file:
 
-```
+```apache
 # ************************************
 # Vhost template in module puppetlabs-apache
 # Managed by Puppet
