@@ -179,9 +179,9 @@ end
 
 Here we've grouped our examples by the class of object we're testing (`Array`), but we've segmented our examples based on the context we're looking to describe. Each `context` introduces a new scope. Examples grouped by `context` can have their own subjects, or they can inherit their subject from their parent. Here's an example where we inherit our subject from our parent and test for different contexts:
 
-```
+```ruby
 describe Hash do
-  let(:subject) {{ :foo => 'bar', :baz => baz_val }}
+  let(:subject) {\{ :foo => 'bar', :baz => baz_val }\}
   let(:baz_val) { nil }
 
   it 'should have the foo key set to bar' do
