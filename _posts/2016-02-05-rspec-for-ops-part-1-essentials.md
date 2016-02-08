@@ -181,8 +181,10 @@ Here we've grouped our examples by the class of object we're testing (`Array`), 
 
 ```ruby
 describe Hash do
-  let(:subject) { { :foo => 'bar', :baz => baz_val } }
   let(:baz_val) { nil }
+  let(:subject) do
+    { :foo => 'bar', :baz => baz_val }
+  end
 
   it 'should have the foo key set to bar' do
     expect(subject[:foo]).to eq 'bar'
@@ -233,8 +235,10 @@ shared_context 'foo should always be set to bar' do
 end
 
 describe Hash do
-  let(:subject) {{ :foo => 'bar', :baz => baz_val }}
   let(:baz_val) { nil }
+  let(:subject) do
+    { :foo => 'bar', :baz => baz_val }
+  end
 
   include_context 'foo should always be set to bar'
 
