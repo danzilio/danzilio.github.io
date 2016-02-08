@@ -181,7 +181,7 @@ Here we've grouped our examples by the class of object we're testing (`Array`), 
 
 ```ruby
 describe Hash do
-  let(:subject) {\{ :foo => 'bar', :baz => baz_val }\}
+  let(:subject) { { :foo => 'bar', :baz => baz_val } }
   let(:baz_val) { nil }
 
   it 'should have the foo key set to bar' do
