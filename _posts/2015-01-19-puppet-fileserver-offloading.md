@@ -48,7 +48,7 @@ Let's take a look at some of the configurations we used to make this happen:
 
 Here's the Apache configuration file for the Puppet 2.7 Masters (of particular note are lines 35-42):
 
-{% highlight apache linenos %}
+```apache
 Listen 8140
 <VirtualHost *:8140>
   SSLEngine on
@@ -75,7 +75,7 @@ Listen 8140
 
   RackAutoDetect On
   DocumentRoot /etc/puppet/rack/public/
-	
+
   <Directory /etc/puppet/rack/>
     Options None
     AllowOverride None
@@ -96,7 +96,7 @@ Listen 8140
   LogFormat "%h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\" %D" api
   CustomLog /var/log/httpd/puppet_access.log api
 </VirtualHost>
-{% endhighlight %}
+```
 
 We're unable to manage the Apache configuration on our 2.7 masters with the `puppetlabs/apache` module (it doesn't work with the version of 2.7 we're stuck on), otherwise I would've provided a code snippet (see below for the Puppet 3 masters). It should be fairly easy to construct an `apache::vhost` definition from the configuration above.
 
