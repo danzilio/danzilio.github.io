@@ -126,7 +126,7 @@ apache::vhost { "${::fqdn}-fileserver":
 
 Which results in this Apache configuration file:
 
-{% highlight apache %}
+```apache
 # ************************************
 # Vhost template in module puppetlabs-apache
 # Managed by Puppet
@@ -160,7 +160,7 @@ Which results in this Apache configuration file:
   ## Custom fragment
   PassengerEnabled On
 </VirtualHost>
-{% endhighlight %}
+```
 
 This was a relatively small amount of work for a huge payoff. We've been able to meet the demand for quicker Puppet runs, while allowing us to take the time we need to have a measured transition to Puppet 3. The plan is to simply point our clients at the new master cluster once the codebase is updated. I'll write a lot more on how we managed to transition. Hopefully the upgrade to Puppet 4 will happen much more quickly (I'm targeting the end of CY15 for that).
 
