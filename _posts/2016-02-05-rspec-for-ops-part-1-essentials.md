@@ -4,6 +4,7 @@ title: "RSpec For Ops Part 1: Essentials"
 date: 2016-02-05
 tags:
   - RSpec
+  - RSpec for Ops
   - TDD
   - Testing
 comments: true

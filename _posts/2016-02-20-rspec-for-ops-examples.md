@@ -4,6 +4,7 @@ title: "RSpec For Ops Part 2: Diving in with rspec-puppet"
 date: 2016-02-20
 tags:
   - RSpec
+  - RSpec for Ops
   - TDD
   - Testing
 comments: true
