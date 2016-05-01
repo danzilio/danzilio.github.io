@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Welcome to Blog Month"
+title: "Welcome to Blog Month!"
 date: 2016-05-01
 tags:
   - blogmonth
@@ -8,8 +8,6 @@ tags:
 comments: true
 published: true
 ---
-
-# Welcome to blog month!
 
 Today marks the beginning of a new experiment for me. I, along few others, will
 be taking part in blog month. Blog month is a commitment to write 30 posts over
