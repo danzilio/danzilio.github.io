@@ -5,6 +5,7 @@ date: 2016-05-01
 tags:
   - blogmonth
   - 30in30
+  - blog month 2016
 comments: true
 published: true
 ---
