@@ -57,12 +57,12 @@ platform so we've used a selector to determine the package name based on the
 ```ruby
 describe 'ssh' do
   context 'on gentoo' do
-    let(:facts) {{ :osfamily => 'gentoo' }}
+    let(:facts) { { :osfamily => 'gentoo' } }
     it { is_expected.to contain_package 'openssh' }
   end
 
   context 'on redhat' do
-    let(:facts) {{ :osfamily => 'redhat' }}
+    let(:facts) { { :osfamily => 'redhat' } }
     it { is_expected.to contain_package 'openssh-server' }
   end
 end
@@ -91,7 +91,7 @@ like for this class:
 
 ```ruby
 describe 'ssh' do
-  let(:params) {{ :package_name => 'openssh-server' }}
+  let(:params) { { :package_name => 'openssh-server' } }
   it { is_expected.to contain_package 'openssh-server' }
 end
 ```
