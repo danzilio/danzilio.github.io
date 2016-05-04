@@ -1,23 +1,22 @@
 ---
 layout: post
 title: "RSpec For Ops Part 2: Diving in with rspec-puppet"
-date: 2016-02-20
+date: 2016-05-03
 tags:
   - RSpec
   - RSpec for Ops
   - TDD
   - Testing
 comments: true
-published: false
 ---
 
 # RSpec for Ops Part 2: Diving in with `rspec-puppet`
 
 This is the second part in a series of blog posts on RSpec for Ops. See the first post [here](http://blog.danzil.io/2016/02/05/rspec-for-ops-part-1-essentials.html).
 
-Now that we've got a good understanding of some of the RSpec primitives, we'll dive into how these can be used when testing infrastructure. I'm going to use Serverspec and `rspec-puppet` for my examples here. If you're not a Puppet user, don't worry, the two main Infracode testing tools (Beaker and Kitchen) both make heavy use of Serverspec.
+Now that we've got a good understanding of some of the RSpec primitives, we'll dive into how these can be used when testing infrastructure. I'm going to use `rspec-puppet` for my examples here. In a forthcoming post I'll use `serverspec` for a more agnostic approach. If you're not a Puppet user, don't worry, the two main Infracode testing tools (Beaker and Kitchen) both make heavy use of Serverspec.
 
-There are two general types of tests that you'll write as an Infracoder: **acceptance** and **unit** tests. We'll use `rspec-puppet` for **unit** tests and `serverspec` for **acceptance** tests.
+There are two general types of tests that you'll write as an Infracoder: **acceptance** and **unit** tests. We'll use `rspec-puppet` for **unit** tests.
 
 ## Unit tests
 
@@ -383,3 +382,7 @@ Finished in 2.11 seconds (files took 0.78148 seconds to load)
 ```
 
 Remember, the goal is not to rewrite your Puppet code in RSpec, it's to ensure that your code is behaving the way you expect it to.
+
+### Stay Tuned
+
+In the next post in this series, I'll use `serverspec` to write some acceptance for this example code. 
