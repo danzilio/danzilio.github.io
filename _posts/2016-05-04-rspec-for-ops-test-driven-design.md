@@ -10,7 +10,6 @@ tags:
 comments: true
 ---
 
-# RSpec for Ops Part 3: Test driven design with `rspec-puppet`
 This is the third part in a series of blog posts on RSpec for Ops. See the first
 post
 [here](http://blog.danzil.io/2016/02/05/rspec-for-ops-part-1-essentials.html)

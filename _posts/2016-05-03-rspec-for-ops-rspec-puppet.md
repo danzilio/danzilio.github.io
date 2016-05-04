@@ -13,8 +13,6 @@ tags:
 comments: true
 ---
 
-# RSpec for Ops Part 2: Diving in with `rspec-puppet`
-
 This is the second part in a series of blog posts on RSpec for Ops. See the first post [here](http://blog.danzil.io/2016/02/05/rspec-for-ops-part-1-essentials.html).
 
 Now that we've got a good understanding of some of the RSpec primitives, we'll dive into how these can be used when testing infrastructure. I'm going to use `rspec-puppet` for my examples here. In a forthcoming post I'll use `serverspec` for a more agnostic approach. If you're not a Puppet user, don't worry, the two main Infracode testing tools (Beaker and Kitchen) both make heavy use of Serverspec.
