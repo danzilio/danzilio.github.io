@@ -109,8 +109,8 @@ makes them more resilient and easier to maintain.
 Composition is a practice where you combine discrete bits of code to achieve a
 desired behavior. Using composition along with classes that have a single
 responsibility, you can achieve complex behaviors that are easy to test, read,
-and extend. To illustrate, let's take a look at a bit of code with poor
-composition.
+and extend. To illustrate, let's take a look at a bit of code with many
+responsibilities.
 
 ```puppet
 class ssh {
