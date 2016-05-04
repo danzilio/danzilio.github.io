@@ -206,11 +206,13 @@ Great! We have a functioning Puppet module, but not a particularly useful one. T
 require 'spec_helper'
 
 describe 'ntp' do
-  let(:params) { {
-    :package_name => 'ntpd',
-    :config_file  => '/etc/ntpd.conf',
-    :service_name => 'ntpd'
-  } }
+  let(:params) do
+    {
+      :package_name => 'ntpd',
+      :config_file  => '/etc/ntpd.conf',
+      :service_name => 'ntpd'
+    }
+  end
 
   it { is_expected.to compile }
   it { is_expected.to contain_package('ntpd') }
