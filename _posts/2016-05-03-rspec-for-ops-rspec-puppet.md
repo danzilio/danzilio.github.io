@@ -385,4 +385,4 @@ Remember, the goal is not to rewrite your Puppet code in RSpec, it's to ensure t
 
 ### Stay Tuned
 
-In the next post in this series, I'll use `serverspec` to write some acceptance for this example code. 
+In the next post in this series, I'll dive a little deeper into module development and `rspec-puppet` best practices. I'll also follow up with a post where I'll use `serverspec` to write some **acceptance** tests for this example code.
