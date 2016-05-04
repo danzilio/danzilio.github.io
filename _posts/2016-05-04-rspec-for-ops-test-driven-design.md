@@ -106,10 +106,11 @@ cases. Our tests needs to know even less about our implementation code, which
 makes them more resilient and easier to maintain.
 
 ### Composition and Single Responsibility
-Now that we've written an interface for our code, let's talk about how to use
-that interface by employing composition. Composition is a practice where you
-combine discrete bits of code to achieve a desired behavior. To illustrate,
-let's take a look at a bit of code with poor composition.
+Composition is a practice where you combine discrete bits of code to achieve a
+desired behavior. Using composition along with classes that have a single
+responsibility, you can achieve complex behaviors that are easy to test, read,
+and extend. To illustrate, let's take a look at a bit of code with poor
+composition.
 
 ```puppet
 class ssh {
