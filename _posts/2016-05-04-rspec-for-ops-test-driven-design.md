@@ -8,7 +8,7 @@ tags:
   - TDD
   - Testing
 comments: true
-posted: false
+published: false
 ---
 
 # RSpec for Ops Part 3: Test driven design with `rspec-puppet`
