@@ -7,6 +7,9 @@ tags:
   - RSpec for Ops
   - TDD
   - Testing
+  - blogmonth
+  - 30in30
+  - blog month 2016
 comments: true
 ---
 
