@@ -50,8 +50,8 @@ class ssh {
 }
 ```
 
-The example above installs an ssh server. We want to support more than one,
-platform so we've used a selector to determine the package name based on the
+The example above installs an ssh server. We want to support more than one
+platform, so we've used a selector to determine the package name based on the
 `osfamily` fact. Let's see what the test looks like for this:
 
 ```ruby
