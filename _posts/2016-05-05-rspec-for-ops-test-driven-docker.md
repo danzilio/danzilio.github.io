@@ -25,7 +25,7 @@ third post
 Over the course of this blog series I've talked about RSpec in general and TDD
 with `rspec-puppet`. Now I'd like to take a more platform-agnostic approach by
 exploring TDD with [Serverspec](http://serverspec.org). For this particular
-example look at how to build a Test Driven Docker image using Serverspec.
+example look at how to build a test driven Docker image using Serverspec.
 
 ## Serverspec
 Serverspec is a framework built on top of RSpec that allows you to write tests
