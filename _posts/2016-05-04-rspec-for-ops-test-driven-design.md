@@ -10,6 +10,7 @@ tags:
   - blogmonth
   - 30in30
   - blog month 2016
+  - rspec-puppet
 comments: true
 ---
 
