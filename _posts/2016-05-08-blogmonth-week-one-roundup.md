@@ -18,8 +18,9 @@ Today marks the end of **week one** of Blog Month. I figured I'd take this oppor
 - **Thursday**: [RSpec For Ops Part 4: Test driven Docker](http://blog.danzil.io/2016/05/05/rspec-for-ops-test-driven-docker.html)
 - **Friday**: No post
 - **Saturday**: No post
+
     
-I wrote **five** posts, of which **three** were technical in nature. To be on track I'd need to write **seven** posts each week, so I'm currently at ~**71%** of my target. I'll need to make up for that in the coming weeks.
+I wrote **five** posts, **three** of which were technical in nature. To be on track I'd need to write **seven** posts each week, so I'm currently at ~**71%** of my target. I'll need to make up for that in the coming weeks.
 
 ## Observations
 Blogging is hard, especially writing on technical topics. I probably spent, on average, about **three hours** on each technical post. That's a lot of time writing. Although the technical posts were really rewarding, they're also very challenging. I have a list of technical topics I want to cover this month, so I'm going to have to really ramp it up if I want to be on track to make 30 posts this month.
