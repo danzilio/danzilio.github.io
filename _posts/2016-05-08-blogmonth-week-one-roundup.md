@@ -11,13 +11,13 @@ comments: true
 
 Today marks the end of **week one** of Blog Month. I figured I'd take this opportunity to do a quick retrospective of the past week. Let's take a look at this week's progress.
 
-**Sunday**: [Welcome to Blog Month!](http://blog.danzil.io/2016/05/01/welcome-to-blog-month.html)
-**Monday**: [Changes](http://blog.danzil.io/2016/05/02/changes.html)
-**Tuesday**: [RSpec For Ops Part 2: Diving in with rspec-puppet](http://blog.danzil.io/2016/05/03/rspec-for-ops-rspec-puppet.html)
-**Wednesday**: [RSpec For Ops Part 3: Test driven design with rspec-puppet](http://blog.danzil.io/2016/05/04/rspec-for-ops-test-driven-design.html)
-**Thursday**: [RSpec For Ops Part 4: Test driven Docker](http://blog.danzil.io/2016/05/05/rspec-for-ops-test-driven-docker.html)
-**Friday**: No post
-**Saturday**: No post
+- **Sunday**: [Welcome to Blog Month!](http://blog.danzil.io/2016/05/01/welcome-to-blog-month.html)
+- **Monday**: [Changes](http://blog.danzil.io/2016/05/02/changes.html)
+- **Tuesday**: [RSpec For Ops Part 2: Diving in with rspec-puppet](http://blog.danzil.io/2016/05/03/rspec-for-ops-rspec-puppet.html)
+- **Wednesday**: [RSpec For Ops Part 3: Test driven design with rspec-puppet](http://blog.danzil.io/2016/05/04/rspec-for-ops-test-driven-design.html)
+- **Thursday**: [RSpec For Ops Part 4: Test driven Docker](http://blog.danzil.io/2016/05/05/rspec-for-ops-test-driven-docker.html)
+- **Friday**: No post
+- **Saturday**: No post
 
 I wrote **five** posts, of which **three** were technical in nature. To be on track I'd need to write **seven** posts each week, so I'm currently at ~**71%** of my target. I'll need to make up for that in the coming weeks.
 
