@@ -18,7 +18,7 @@ Today marks the end of **week one** of Blog Month. I figured I'd take this oppor
 - **Thursday**: [RSpec For Ops Part 4: Test driven Docker](http://blog.danzil.io/2016/05/05/rspec-for-ops-test-driven-docker.html)
 - **Friday**: No post
 - **Saturday**: No post
-
+    
 I wrote **five** posts, of which **three** were technical in nature. To be on track I'd need to write **seven** posts each week, so I'm currently at ~**71%** of my target. I'll need to make up for that in the coming weeks.
 
 ## Observations
