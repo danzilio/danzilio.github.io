@@ -11,9 +11,11 @@ tags:
 comments: true
 ---
 
-I'm currently in the process of putting together a talk about Design Patterns for Puppet, so I figured I'd blog a bit about it along the way. I'm pretty passionate about patterns because I think they really help you understand a problem as well as the dynamics of the language you're working in. Design patterns are frequently used solutions to common problems. They tend to emerge naturally, and are usually observed rather than invented. The seminal work on design patterns was _Design Patterns: Elements of Reusable Object-Oriented Software_, commonly referred to as the Gang of Four (GoF) book. If you're interested in understanding more about design patterns in general, I highly recommend you pick up a copy of the GoF book as well as _Design Patterns in Ruby_ by Russ Olsen.
+I'm currently in the process of putting together a talk about Design Patterns for Puppet, so I figured I'd blog a bit about it along the way. I'm pretty passionate about patterns because I think they really help you understand a problem as well as the dynamics of the language you're working in.
 
-Not all of the GoF patterns can be directly applied to Puppet, and most of the patterns that do apply need a little bit of massaging to get there. This is mostly due to the fact that Puppet is not an object oriented programming language. That being said, I think there are definitely some lessons to be learned from the GoF that apply to Puppet. There's also great value in simply identifying a pattern and giving it a name.
+Design patterns are frequently used solutions to common problems. They tend to emerge naturally, and are usually observed rather than invented. The seminal work on design patterns was _Design Patterns: Elements of Reusable Object-Oriented Software_, commonly referred to as the Gang of Four (GoF) book. If you're interested in understanding more about design patterns in general, I highly recommend you pick up a copy of the GoF book as well as _Design Patterns in Ruby_ by Russ Olsen.
+
+Not all of the GoF patterns can be directly applied to Puppet, and most of the patterns that do apply need a little bit of massaging to get there. This is mostly due to the fact that Puppet is not an object oriented programming language. That being said, I think there are definitely some lessons to be learned from the GoF when it comes to Puppet. There's also great value in simply identifying a pattern and giving it a name.
 
 ## The Strategy Pattern
 The Strategy pattern is used when you have a part of an algorithm that must vary under certain conditions. The Strategy pattern uses **composition** to achieve that variation. The GoF describes this as "pull[ing] the algorithm out into a separate object."
