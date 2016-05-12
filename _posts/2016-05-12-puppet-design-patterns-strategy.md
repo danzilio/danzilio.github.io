@@ -11,7 +11,7 @@ tags:
 comments: true
 ---
 
-I'm currently in the process of putting together a talk about Design Patterns for Puppet, so I figured I'd blog a bit about it along the way. I'm pretty passionate about patterns because I think they really help you understand a problem as well as the dynamics of the language you're working in.
+I'm currently in the process of putting together a talk about Design Patterns for Puppet, so I figured I'd blog a bit about it along the way. I'm pretty passionate about patterns for a number of reasons. I think they really help you understand the dynamics of the language you're working in. They also help you understand design decisions involved in implementing a lasting solution to a problem.
 
 Design patterns are frequently used solutions to common problems. They tend to emerge naturally, and are usually observed rather than invented. The seminal work on design patterns was _Design Patterns: Elements of Reusable Object-Oriented Software_, commonly referred to as the Gang of Four (GoF) book. If you're interested in understanding more about design patterns in general, I highly recommend you pick up a copy of the GoF book as well as _Design Patterns in Ruby_ by Russ Olsen.
 
