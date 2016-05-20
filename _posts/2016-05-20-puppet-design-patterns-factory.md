@@ -11,9 +11,8 @@ tags:
 comments: true
 ---
 
-Yesterday, at [PuppetCamp Boston](https://puppet.com/community/events/camp/puppet-camp-boston-2016),
-I gave a talk on Puppet Design Patterns. Last week, I wrote a blog post about
-the [Strategy Pattern](http://blog.danzil.io/2016/05/12/puppet-design-patterns-strategy.html).
+Yesterday, at PuppetCamp Boston, I gave a talk on [Puppet Design Patterns](http://www.slideshare.net/DavidDanzilio/puppet-design-patterns). Last
+week, I wrote a blog post about the [Strategy Pattern](http://blog.danzil.io/2016/05/12/puppet-design-patterns-strategy.html).
 In this post I'll talk about the Factory Pattern.
 
 ## What's in a name?
