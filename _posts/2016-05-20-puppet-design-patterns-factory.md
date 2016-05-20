@@ -83,7 +83,7 @@ In the above examples, the `filefactory` class is the resource factory. It
 creates new resources based on the data passed to the factory's interface. Let's
 take a look at a real-world example of this.
 
-## The Factory Pattern in `ghoneycutt/nrpe`
+## The Factory Pattern in ghoneycutt/nrpe
 The Factory Pattern allows you to create resources inside your entry point. We
 see this in a number of modules, but let's take a look at Garrett Honeycutt's
 `nrpe` module [here](https://github.com/ghoneycutt/puppet-module-nrpe). This
