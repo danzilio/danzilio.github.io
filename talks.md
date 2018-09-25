@@ -4,6 +4,8 @@ title: Talks
 permalink: /talks/
 ---
 Here's a reasonably up to date list of conference talks I've given.
+# 2018
+- **Princess Leia and Open Source: A Story of Understanding and Coping with Impostor Syndrome** - DevOpsDays, Boston MA - [slides](https://www.slideshare.net/DavidDanzilio/princess-leia-and-open-source-a-story-of-understanding-and-coping-with-impostor-syndrome)
 
 # 2016
 - **Puppet Design Patterns: Lessons from the Gang of Four** - PuppetConf, San Diego CA - [slides](http://www.slideshare.net/DavidDanzilio/puppet-design-patterns-puppetconf), [video](https://www.youtube.com/watch?v=XQwBv3eBHQA)
