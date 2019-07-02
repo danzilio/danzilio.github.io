@@ -1,10 +1,10 @@
 # Site settings
 title: Dispatches from the Bubble
 description: >
-  I’m currently the Cloud and Platform Automation Manager at Kovarus. This blog
-  is my way of contributing back to the community. It's also a sort of exposure
-  therapy for my impostor syndrome. Maybe you’ll learn something. Better yet,
-  maybe you’ll teach me something.
+  I’m currently a Senior Manager of Site Reliability Engineering at athenahealth.
+  This blog is my way of contributing back to the community. It's also a sort of
+  exposure therapy for my impostor syndrome. Maybe you’ll learn something. Better
+  yet, maybe you’ll teach me something.
 tagline: Random musings of an Op
 baseurl: ""
 url: "http://blog.danzil.io"
